@@ -1,0 +1,784 @@
+/* основное */
+
+.button {
+  position: absolute;
+  width: 447px;
+  height: 107px;
+  border: 7px solid #5EE453;
+  border-radius: 90px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 10px 10px 0px 0px #5EE453;
+}
+
+.button:hover {
+  box-shadow: none;
+}
+
+.none {
+  display: none;
+}
+
+.mouse1 {
+  position: absolute;
+  width: 62px;
+  height: 95px;
+  margin: 15px 0px 15px 0px;
+  background: url(../images/mouse1.svg);
+  z-index: 1;
+}
+
+.move {
+  position: absolute;
+  width: 62px;
+  height: 170px;
+}
+
+.rotates {
+  position: absolute;
+  width: 62px;
+  height: 170px;
+}
+
+.mouseblack {
+  position: absolute;
+  width: 62px;
+  height: 95px;
+  margin: 15px 0px 15px 0px;
+  background: url(../images/mouse3.svg);
+  z-index: 1;
+}
+
+.mouse2 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  animation: mouseclick 1s infinite;
+}
+
+/* первый экран */
+.view1 {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.onetext {
+  position: absolute;
+  top: 710px;
+  left: 60px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 32px;
+  animation: one 1s ease-in;
+  width: 294px;
+  height: 72px;
+}
+
+.bighead {
+  position: absolute;
+  top: 0px;
+  left: 422px;
+}
+
+.pills {
+  position: absolute;
+  top: 141px;
+  left: -46px;
+  height: 182px;
+  width: 340px;
+  background: url(../images/pills.svg);
+  transform: rotate(42deg);
+}
+
+.plastir {
+  position: absolute;
+  top: 144px;
+  left: 258px;
+  height: 120px;
+  width: 340px;
+  background: url(../images/plastir.svg);
+  transform: rotate(46deg);
+}
+
+.nasos {
+  position: absolute;
+  top: 432px;
+  left: 19px;
+  height: 106px;
+  width: 408px;
+  background: url(../images/nasos.svg);
+  transform: rotate(-36deg);
+}
+
+.rotate {
+  transform: rotate(30deg);
+  transition: all 3s;
+}
+
+#screen1 {
+  position: absolute;
+  top: 830px;
+  left: 46px;
+}
+#screen1 p {
+  position: relative;
+  top: 10px;
+  left: 103px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 64px;
+}
+
+/* второй экран */
+.view2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.dog1 {
+  position: absolute;
+  top: 111px;
+  left: 160px;
+}
+
+.whiteeye1 {
+  position: absolute;
+  top: 333px;
+  left: 240px;
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+  background: white;
+}
+
+.blackeye1 {
+  width: 50px;
+  height: 50px;
+  background: url(../images/smalleye.svg);
+  position: absolute;
+  left: 18px;
+  top: 0px;
+  border-radius: 100%;
+}
+
+.whiteeye2 {
+  position: absolute;
+  top: 355px;
+  left: 388px;
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+  background: white;
+}
+
+.yazik {
+  position: fixed;
+  top: 540px;
+  left: 294px;
+  width: 72px;
+  height: 82px;
+  border-radius: 0 0 90px 90px;
+  background: #FBA7C5;
+}
+
+.blackyazik {
+  position: absolute;
+  left: 30px;
+  width: 8px;
+  height: 50px;
+  border-radius: 0 0 90px 90px;
+  background: black;
+}
+
+#countdown {
+  position: relative;
+  top: 892px;
+  left: 51px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 64px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  width: 140px;
+  height: 73px;
+}
+
+.ukazatel1 {
+  position: absolute;
+  top: 564px;
+  left: 210px;
+}
+
+.ukazatel1:hover {
+  transform: scale(1.2);
+}
+
+.ukazatel2 {
+  position: absolute;
+  top: 764px;
+  left: 675px;
+}
+
+.ukazatel2:hover {
+  transform: scale(1.2);
+}
+
+.ukazatel3 {
+  position: absolute;
+  top: 343px;
+  left: 885px;
+}
+
+.ukazatel3:hover {
+  transform: scale(1.2);
+}
+
+.ukazatel4 {
+  position: absolute;
+  top: 80px;
+  left: 1134px;
+}
+
+.ukazatel4:hover {
+  transform: scale(1.2);
+}
+
+.mouth1 {
+  position: absolute;
+  top: 532px;
+  left: 246px;
+}
+
+.mouth2 {
+  position: absolute;
+  top: 513px;
+  left: 284px;
+}
+
+.mouth3 {
+  position: absolute;
+  top: 488px;
+  left: 271px;
+}
+
+.mouth4 {
+  position: absolute;
+  top: 520px;
+  left: 311px;
+}
+
+.mouth5 {
+  position: absolute;
+  top: 468px;
+  left: 311px;
+}
+
+.stars {
+  position: absolute;
+  top: 416px;
+  left: 806px;
+}
+
+.brows {
+  position: absolute;
+  top: 319px;
+  left: 317px;
+}
+
+.voshkiview {
+  position: absolute;
+  top: 414px;
+  left: 792px;
+}
+
+.treshina {
+  position: absolute;
+  top: 780px;
+  left: 540px;
+}
+
+.pills2 {
+  position: absolute;
+  top: -28px;
+  left: 688px;
+  height: 182px;
+  width: 340px;
+  background: url(../images/pills2.svg);
+  transform: rotate(42deg);
+}
+
+.plastir2 {
+  position: absolute;
+  top: 690px;
+  left: 43px;
+  height: 80px;
+  width: 230px;
+  background: url(../images/plastir2.svg);
+  transform: rotate(41deg);
+}
+
+.nasos2 {
+  position: absolute;
+  top: 808px;
+  left: 1135px;
+  height: 80px;
+  width: 306px;
+  background: url(../images/nasos2.svg);
+  transform: rotate(-52deg);
+}
+
+.molotok2 {
+  position: absolute;
+  top: 130px;
+  left: -107px;
+  height: 142px;
+  width: 324px;
+  background: url(../images/molotok2.svg);
+  transform: rotate(-44deg);
+}
+
+/* третий экран */
+
+.view4 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.blackarea {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  background-color: black;
+}
+
+svg {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  z-index: 1;
+}
+
+.arrow1 {
+  position: absolute;
+  top: 195px;
+  left: 162px;
+  z-index: 1;
+}
+
+.proveditabletku {
+  position: absolute;
+  top: 690px;
+  left: 62px;
+  z-index: 1;
+}
+
+.arrow2 {
+  position: absolute;
+  top: 503px;
+  left: 744px;
+  z-index: 1;
+}
+
+.nekasayac {
+  position: absolute;
+  top: 80px;
+  left: 455px;
+  z-index: 1;
+}
+
+.chernoy {
+  position: absolute;
+  top: 350px;
+  left: 865px;
+  z-index: 1;
+}
+
+.territorii {
+  position: absolute;
+  top: 830px;
+  left: 1010px;
+  z-index: 1;
+}
+
+#mscreen3 {
+  position: absolute;
+  top: 820px;
+  left: 1340px;
+}
+
+.finish {
+  position: absolute;
+  top: 510px;
+  left: 1346px;
+  z-index: 1;
+}
+
+@mouseclick {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.tabletka {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  width: 48px;
+  height: 90px;
+  transform: rotate(36deg);
+  background: url(../images/tabletka.svg);
+  z-index: 2;
+}
+
+.hidden {
+  position: absolute;
+  top: 512px;
+  left: 1341px;
+  width: 100px;
+  height: 160px;
+  z-index: 1;
+}
+
+/* четвертый экран */
+
+.view4 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.lapa {
+  position: absolute;
+  left: 550px;
+}
+
+.kusoklapi {
+  position: absolute;
+  top: 209px;
+  left: 680px;
+}
+
+.podskazka {
+  position: absolute;
+  top: 209px;
+  left: 680px;
+}
+
+.view4 p {
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 48px;
+}
+
+.view4 p:nth-of-type(1) {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  transform: rotate(-15deg);
+}
+
+.view4 p:nth-of-type(2) {
+  position: absolute;
+  top: 155px;
+  left: 390px;
+  transform: rotate(35deg);
+}
+
+.view4 p:nth-of-type(3) {
+  position: absolute;
+  top: 630px;
+  left: 115px;
+  transform: rotate(30deg);
+}
+
+.view4 p:nth-of-type(4) {
+  position: absolute;
+  top: 820px;
+  left: 230px;
+  transform: rotate(-10deg);
+}
+
+.lapa1 {
+  position: absolute;
+  top: 566px;
+  left: 300px;
+  width: 96px;
+  height: 334px;
+  background: url(../images/lapa1.svg);
+  transform: rotate(-105deg);
+}
+
+.lapa2 {
+  position: absolute;
+  top: 330px;
+  left: 80px;
+  width: 225px;
+  height: 334px;
+  background: url(../images/lapa2.svg);
+  transform: rotate(-60deg);
+}
+
+.lapa3 {
+  position: absolute;
+  top: 404px;
+  left: 347px;
+  width: 312px;
+  height: 224px;
+  background: url(../images/lapa3.svg);
+  transform: rotate(60deg);
+}
+
+.lapa4 {
+  position: absolute;
+  top: 142px;
+  left: 142px;
+  width: 235px;
+  height: 224px;
+  background: url(../images/lapa4.svg);
+  transform: rotate(-15deg);
+}
+.lapa5 {
+  position: absolute;
+  top: 44px;
+  left: 570px;
+  width: 84px;
+  height: 226px;
+  background: url(../images/lapa5.svg);
+  transform: rotate(60deg);
+}
+#mscreen41 {
+  position: absolute;
+  top: 820px;
+  left: 1240px;
+}
+#mscreen42 {
+  position: absolute;
+  top: 820px;
+  left: 1340px;
+}
+
+/* пятый экран */
+
+.view3 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.loop {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(../images/volosi.svg);
+  background-attachment: fixed;
+  border-radius: 50%/50%;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+.volosi2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/volosi2.svg), url(../images/volosi.svg);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#v1 {
+  position: absolute;
+  top: 143px;
+  left: 492px;
+  z-index: 2;
+}
+
+#v2 {
+  position: absolute;
+  top: 251px;
+  left: 1181px;
+  z-index: 2;
+}
+
+#v3 {
+  position: absolute;
+  top: 833px;
+  left: 944px;
+  z-index: 2;
+}
+
+#v4 {
+  position: absolute;
+  top: 727px;
+  left: 590px;
+  z-index: 2;
+}
+
+#v5 {
+  position: absolute;
+  top: 420px;
+  left: 775px;
+  z-index: 2;
+}
+
+#v6 {
+  position: absolute;
+  top: 606px;
+  left: 1107px;
+  z-index: 2;
+}
+
+#v7 {
+  position: absolute;
+  top: 600px;
+  left: 338px;
+  z-index: 2;
+}
+
+#v8 {
+  position: absolute;
+  top: 852px;
+  left: 200px;
+  z-index: 2;
+}
+
+#v9 {
+  position: absolute;
+  top: 371px;
+  left: 62px;
+  z-index: 2;
+}
+
+#v10 {
+  position: absolute;
+  top: 141px;
+  left: 805px;
+  z-index: 2;
+}
+
+#v11 {
+  position: absolute;
+  top: 67px;
+  left: 154px;
+  z-index: 2;
+}
+
+#v12 {
+  position: absolute;
+  top: 264px;
+  left: 285px;
+  z-index: 2;
+}
+
+#screen5 {
+  position: absolute;
+  top: 830px;
+  left: 46px;
+  z-index: 2;
+}
+#screen5 p {
+  position: relative;
+  top: 10px;
+  left: 103px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 64px;
+}
+
+.nadpic {
+  position: absolute;
+  top: 46px;
+  left: 900px;
+  width: 474px;
+  height: 164px;
+  border-radius: 90px;
+  background-color: white;
+  border: 7px solid #5EE453;
+  z-index: 2;
+}
+
+.nadpic p {
+  position: relative;
+  top: 43px;
+  left: 82px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 32px;
+  z-index: 2;
+}
+
+/* экран окончания времени */
+
+.timeover {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: white;
+  background-color: white;
+}
+
+.timeovertext {
+  position: absolute;
+  top: 244px;
+  left: 484px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 126px;
+  letter-spacing: 9px;
+}
+
+.timeovertext2 {
+  position: absolute;
+  top: 409px;
+  left: 484px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 36px;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#screentimeover {
+  position: absolute;
+  top: 556px;
+  left: 493px;
+}
+
+#screentimeover p {
+  position: relative;
+  top: 10px;
+  left: 82px;
+  font-family: 'PPPangramSansRounded-Bold';
+  font-size: 64px;
+}
+
+.sharik2 {
+  position: absolute;
+  top: 742px;
+  left: 412px;
+}
+
+
+/* экран окончания игры */
+.gameover {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: pink;
+}
